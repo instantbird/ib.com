@@ -29,7 +29,7 @@ include('header.inc.php');
           <li>Interested in Human Computer Interactions, psychology, ...</li>
           <li>Currently studying sociology</li>
           <li>Loves some old French cars, and owns a car that is almost twice as old as he is:<br/>
-            <img alt="Flo's old car" title="Citroën Ami 6 Break Club - January 1968" src="images/ami6.jpg" /></li>
+            <img alt="Flo's old car" title="CitroÃ«n Ami 6 Break Club - January 1968" src="images/ami6.jpg" /></li>
         </ul>
 
       </div>
