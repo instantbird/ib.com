@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - About</title>
+  <link rel="stylesheet" type="text/css" href="theme/home.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+<script>
+(function () {
+  var available = ["cs","de","en-US","es-ES","et","fr","he","hu","it","nl","pl","pt-BR","pt-PT","ru","sk","sv-SE","tr","uk","zh-TW","ct"], page = location.pathname.split('/').pop();
+  var byLower = {};
+  available.forEach(function (l) { byLower[l.toLowerCase()] = l; var s = l.split('-')[0].toLowerCase(); if (!byLower[s]) byLower[s] = l; });
+  var langs = navigator.languages || [navigator.language || ''], fallback = null;
+  for (var i = 0; i < langs.length; i++) {
+    var l = langs[i].toLowerCase(), s = l.split('-')[0];
+    if (byLower[l]) { fallback = byLower[l]; break; }
+    if (!fallback && byLower[s]) fallback = byLower[s];
+  }
+  if (fallback && fallback != 'en-US') location.replace(fallback + '/' + page + location.hash);
+})();
+</script>
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Home</span></a>
+        <span></span><a href="http://blog.instantbird.org/">News</a><a href="https://addons.instantbird.org/">Add-ons</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Developers</a><a href="about.html">About</a>
+
+      </div>
+
+      <div id="page">
+
+        <h1>About Florian Qu&egrave;ze</h1>
+
+        <div id="florian" class="team">
+          <h3>Instantbird Guru</h3>
+          <p>Email: <a href="mailto:flo@instantbird.org">flo@instantbird.org</a><br/>
+          IRC: <code>flo</code> (or <code>fqueze</code> or <code>florian</code>)</p>
+        </div>
+
+        <h2 class="borderbottom">Short bio</h2>
+
+        <ul>
+          <li>French</li>
+          <li>Studied Computer Science</li>
+          <li>Some <a href="https://bugzilla.mozilla.org/buglist.cgi?quicksearch=FIXED+%40queze">Firefox work</a>:
+	    <ul><li>2004 - 2006 Several fixes on the Page Info dialog (Google Summer of Code in 2006)</li></ul>
+            <ul><li>intern at Mozilla Corporation in Mountain View (2007 - 2008), worked on Firefox 3</li></ul>
+          </li>
+          <li>Started the <a href="http://www.instantbird.org/">Instantbird project</a> in 2007.</li>
+        </ul>
+
+        <h2 class="borderbottom">Short bio (unrelated to Instantbird)</h2>
+        <ul>
+          <li>Interested in Human Computer Interactions, psychology, ...</li>
+          <li>Currently studying sociology</li>
+          <li>Loves some old French cars, and owns a car that is almost twice as old as he is:<br/>
+            <img alt="Flo's old car" title="Citroën Ami 6 Break Club - January 1968" src="images/ami6.jpg" /></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">The Instantbird Team</a>.</p>
+      <p class="small-text">All product names and trademarks are the property of their respective owners.</p>
+    </div>
+  </div>
+
+</body>
+</html>

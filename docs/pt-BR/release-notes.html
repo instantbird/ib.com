@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - Notas de Lançamento</title>
+  <link rel="stylesheet" type="text/css" href="../theme/home.css" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Home</span></a>
+        <span></span><a href="http://blog.instantbird.org/">Notícias</a><a href="https://addons.instantbird.org/">Extensões</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Wiki</a><a href="about.html">Sobre</a>
+
+      </div>
+
+
+      <div id="page">
+
+        <ul id="index-box">
+          <li><a href="features.html">Melhorias</a></li>
+          <li><a href="download-all.html">Sistemas e Idiomas</a></li>
+          <li>Nota de lançamento</li>
+          <li style="border-bottom-style: none;"><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.win32.installer.exe">Baixe Instantbird 1.5 Agora!</a></li>
+        </ul>
+
+        <h1>Notas de lançamento de Instantbird 1.5</h1>
+
+        <h2>Confira as novidades e os problemas conhecidos da versão mais recente de Instantbird. Como de costume, encorajamos você a dizer-nos o que acha do aplicativo, por <a href="about.html#get_in_touch">enviar um feedback</a> ou por <a href="http://bugzilla.instantbird.org">arquivar um bug no Bugzilla</a>.</h2>
+
+<h2 class="borderbottom">Novidades</h2>
+
+<ul class="whatsnewbullets">
+
+<li>Criar uma <strong>nova aba de conversa</strong> ficou mais fácil.<ul>
+ <li>Ao clicar no botão '+' numa janela de conversa, será mostrado uma lista de conversas que pode ser iniciado com um simples clique.</li>
+ <li>A lista é sorteada com um algoritmo de frequência, exibindo os contatos pela ordem em que você conversa com frequência.</li>
+ <li>Essa lista inclui também os canais de aviso dos serviddores IRC dos quais você está conectado.</li>
+</ul></li>
+
+<li><strong>Novas ferramentas</strong> que melhor se adapte ao estilo de Instantbird</li>
+
+<li>Interface de chat multi-usuário melhorada:<ul>
+ <li>É possível iniciar um chat privado ou adicionar participantes de uma sala de chat através do menu de contexto.</li>
+ <li>Contatos destacados nas salas de chat tem agora ferramentas e menus de contexto.</li>
+</ul></li>
+
+<li>As salas de chat que forem unidas automaticamente ficarão no espaço das Conversas em Espera, mesmo que você reinicie Instantbird.</li>
+
+<li>Uma lista de nicks alternativos para IRC pode ser configurado, no caso de você preferir, seu nickname favorito será exibido quando se conectar.</li>
+
+<li>Páginas about: (ex.: <strong>about:config</strong>) podem ser executadas facilmente, pelo comando /about (ex.: /about config).</li>
+
+<li>Suporte à tecnologia Retina display no Mac OS X.</li>
+
+<li>Contatos do Google Talk e usuários do app Hangouts para Android são mostrados, no status, como "pelo celular".</li>
+
+<li>Usuários do Google Hangouts não serão mais exibidos como se estiveessem sempre digitação.</li>
+
+<li>Melhor suporte para a exibição de idiomas RTL (que são escritos da </strong>direita para a esquerda</strong>, como o arábe, hebraico, etc.) nas conversas.</li>
+
+<li>O protocolo <strong>vKontakte</strong> foi removido porque o suporte da rede social ao cliente XMPP foi desativado.</li>
+
+<li>New for developers: Novo API para adicionar painéis de abas com conteúdo arbitrário para janelas de conversas: <a href="http://hg.instantbird.org/instantbird/file/94b13a23dac6/instantbird/content/tabbrowser.xml#l427">Documentação in-code</a>.</li>
+
+<li>Atualizado para Mozilla 25.</li>
+
+<li>Varios pequenos bugs e crashers foram resolvidos.</li>
+
+<li>E muito mais... leia toda a <a href="../ChangeLog-1.5">ChangeLog</a> (em inglês) para mais detalhes sobre as mudanças de código de Instantbird 1.4 para a versão atual.</li>
+
+</ul>
+
+<h2 class="borderbottom">Erros conhecidos:</h2>
+
+<ul>
+
+<li>Usuários NVDA deverão atualizar para a versão 2014.1 para trabalhar com bugs na plataforma da Mozilla que leva para "Unknown" being said when scrolling through the contact list.</li>
+
+<li>Ao clicar em URLs em algumas distribuições Linux mais novas, para resolver essa falha, execute o comando /about config numa janela de conversa e procure pela registro <strong>network.protocol-handler.warn-external</strong>, e mude o valor para true (verdadeiro). Voce será avisado para selecionar um aplicativo após clicar nesses links. Veja o <a href="https://bugzilla.instantbird.org/show_bug.cgi?id=1995">bug 1995</a>.</li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">The Instantbird Team</a>.</p>
+      <p class="small-text">Todos os nomes de produtos e marcas pertencem aos seus proprietários.</p>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var ua = navigator.userAgent;
+  var os = ua.indexOf('Mac') != -1 ? 'mac' : ua.indexOf('Linux') != -1 ? 'linux' : null;
+  if (!os) return;
+  [{"tag": "a", "n": 8, "key": "href", "val": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.win32.installer.exe", "mac": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.mac.dmg"}, "linux": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.linux-i686.tar.bz2"}}].forEach(function (e) {
+    if (e.text) {
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode())
+        if (walker.currentNode.nodeValue.trim() == e.text)
+          walker.currentNode.nodeValue = walker.currentNode.nodeValue.replace(e.text, e[os]);
+      return;
+    }
+    var el = document.getElementsByTagName(e.tag)[e.n];
+    if (!el || el.getAttribute(e.key) != e.val) return;
+    for (var a in e[os])
+      e[os][a] === null ? el.removeAttribute(a) : el.setAttribute(a, e[os][a]);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird 1.5</title>
+  <link rel="stylesheet" type="text/css" href="theme/home.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+<script>
+(function () {
+  var available = ["cs","de","en-US","es-ES","et","fr","he","hu","it","nl","pl","pt-BR","pt-PT","ru","sk","sv-SE","tr","uk","zh-TW","ct"], page = location.pathname.split('/').pop();
+  var byLower = {};
+  available.forEach(function (l) { byLower[l.toLowerCase()] = l; var s = l.split('-')[0].toLowerCase(); if (!byLower[s]) byLower[s] = l; });
+  var langs = navigator.languages || [navigator.language || ''], fallback = null;
+  for (var i = 0; i < langs.length; i++) {
+    var l = langs[i].toLowerCase(), s = l.split('-')[0];
+    if (byLower[l]) { fallback = byLower[l]; break; }
+    if (!fallback && byLower[s]) fallback = byLower[s];
+  }
+  if (fallback && fallback != 'en-US') location.replace(fallback + '/' + page + location.hash);
+})();
+</script>
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Home</span></a>
+        <span></span><a href="http://blog.instantbird.org/">News</a><a href="https://addons.instantbird.org/">Add-ons</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Developers</a><a href="about.html">About</a>
+
+      </div>
+
+
+<div id="page">
+
+<h1>Instantbird 1.5</h1>
+
+<p>Instantbird 1.5 was already available in 13 languages, thanks to the contributions from our translators around the world, and we look forward to see this number grow with your help!</p>
+
+<h2 class="borderbottom">Download</h2>
+
+<p>Instantbird runs on Windows, Mac OS X and Linux platforms.</p>
+<p>Please see the <a href="system-requirements.html">minimum system requirements</a> needed to run Instantbird.</p>
+
+<table id="table-download">
+<tr>
+  <th>Language</th>
+  <th>Version</th>
+  <th><img alt="" src="theme/ico-win.png" />Windows</th>
+  <th><img alt="" src="theme/ico-osx.png" />Mac&nbsp;OS&nbsp;X</th>
+  <th><img alt="" src="theme/ico-tux.png" />Linux</th>
+</tr>
+
+        <tr>
+          <td>Czech</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.cs.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.cs.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.cs.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>German</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.de.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.de.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.de.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>English</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.en-US.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.en-US.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.en-US.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Spanish</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Estonian</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.et.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.et.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.et.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>French</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.fr.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.fr.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.fr.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Dutch</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.nl.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.nl.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.nl.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Polish</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pl.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pl.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pl.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Brazilian Portuguese</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Russian</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.ru.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.ru.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.ru.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Slovak</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.sk.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.sk.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.sk.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Swedish</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.sv-SE.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.sv-SE.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.sv-SE.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+        <tr>
+          <td>Ukrainian</td>
+          <td>1.5</td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.uk.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.uk.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+          <td><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.uk.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
+        </tr>
+
+</table>
+
+
+<h2 class="borderbottom"><a name="links" class="no-link">Download the source code</a></h2>
+
+<p>As Instantbird is an open source project, you can freely <a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.src.tgz">download the source code</a> and modify it.</p>
+
+<h2 class="borderbottom">What's new?</h2>
+
+<ul class="whatsnewbullets">
+
+<li>Creating a <strong>new conversation tab</strong> has been made easier.<ul>
+ <li>Clicking the '+' button in a conversation window shows a list of conversations that can be started with a single click.</li>
+ <li>The list is sorted with a frecency algorithm, taking into account how often and how recently you've talked to each contact.</li>
+ <li>This list also automatically includes the channels advertised by the IRC servers you are connected to.</li>
+</ul></li>
+
+<li><strong>New tooltips</strong> that better fit the style of Instantbird</li>
+
+<li>Improved Multi-user chats user interface:<ul>
+ <li>Participants now have context menus that allow you to open private conversations or add them as buddies.</li>
+ <li>Highlighted nicks in chat rooms now have tooltips and context menus.</li>
+</ul></li>
+
+<li>Auto-joined chat rooms that have been put on hold will stay on hold after a restart.</li>
+
+<li>A list of alternate nicks for IRC can be configured, in case your preferred nick is taken when you connect.</li>
+
+<li>about: pages (e.g. about:config) can now easily be opened with the /about command (e.g. /about config).</li>
+
+<li>Retina display support on Mac OS X.</li>
+
+<li>Google Talk and Hangouts Android users are now shown as mobile.</li>
+
+<li>Google Hangouts users will no longer appear as always typing.</li>
+
+<li>Better support for displaying RTL languages in conversations.</li>
+
+<li>The vKontakte protocol was removed as the vKontakte service dropped support for connecting with an XMPP client.</li>
+
+<li>New for developers: New API to add tab panels with arbitrary content to conversation windows: <a href="http://hg.instantbird.org/instantbird/file/94b13a23dac6/instantbird/content/tabbrowser.xml#l427">in-code documentation</a>.</li>
+
+<li>Updated to Mozilla 25.</li>
+
+<li>Various minor bugs and a few crashers fixed.</li>
+
+<li>And more... read the full <a href="ChangeLog-1.5">ChangeLog</a> for details of all code changes since Instantbird 1.4.</li>
+
+</ul>
+
+<h2 class="borderbottom">Known Issues:</h2>
+
+<ul>
+
+<li>NVDA users should update to 2014.1 to work around a bug in the Mozilla platform that leads to "Unknown" being said when scrolling through the contact list.</li>
+
+<li>Clicking on URLs doesn't work on some newer Linux distributions, to work around this, open about:config (/about config in a conversation) and search for network.protocol-handler.warn-external, set all of these values to true. You will now be prompted for a program after clicking these links. See <a href="https://bugzilla.instantbird.org/show_bug.cgi?id=1995">bug 1995</a>.</li>
+
+</ul>
+<h2 class="borderbottom">Older versions</h2>
+<p>You can access the <a href="download-archive.html">archives</a> to download the older versions of Instantbird.</p>
+
+</div>    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">The Instantbird Team</a>.</p>
+      <p class="small-text">All product names and trademarks are the property of their respective owners.</p>
+    </div>
+  </div>
+
+</body>
+</html>

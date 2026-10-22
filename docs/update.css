@@ -1,0 +1,71 @@
+@font-face
+{
+  font-family: Sacco-Vanzetti Instantbird;
+  font-weight: normal;
+  src: url('fonts/SaccoVanzettiInstantbird.otf') format("opentype");
+}
+
+@font-face
+{
+  font-family: Sacco-Vanzetti Instantbird;
+  font-weight: bold;
+  src: url('fonts/SaccoVanzettiInstantbirdBold.otf') format("opentype");
+}
+
+body
+{
+  margin: 20px 12px 0;
+  padding: 0;
+  font-family: Sacco-Vanzetti Instantbird, Arial, sans-serif;
+  font-size: small;
+  color: #4d4d4d;
+  background: url('images/update-background.png') repeat-x left top;
+  background-color: white;
+}
+
+h1
+{
+  font-size: large;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+#link
+{
+  margin-top: -5px;
+}
+
+a
+{
+  color: #054a88;
+}
+
+a:hover
+{
+  color: #c85e00;
+}
+
+#logo
+{
+  float: right;
+  margin: -10px 0 5px 2px;
+}
+
+ul
+{
+  clear: both;
+  margin: 0;
+  padding: 3px 10px 5px 25px;
+  border: 1px solid #caddee;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: #caddee 0px 0px 5px;
+  box-shadow: #caddee 0px 0px 5px;
+  background: url('images/update-bubble-background.png') repeat-x left top;
+  background-color: white;
+}
+
+li
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - Часті Питання</title>
+  <link rel="stylesheet" type="text/css" href="../theme/home.css" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Додому</span></a>
+        <span></span><a href="http://blog.instantbird.org/">Новини</a><a href="https://addons.instantbird.org/">Додатки</a><a href="faq.html">ЧаПи</a><a href="https://wiki.instantbird.org/">Developers</a><a href="about.html">Про</a>
+
+      </div>
+
+
+      <div id="page" class="faq condensed">
+
+        <h1>Часті Питання</h1>
+
+        <h2 class="borderbottom">Зміст</h2>
+
+        <li>Встановлення<ul>
+          <li><a href="#useexistingaccounts">Чи потрібно мені надавати нову контактну інформацію моїм друзям?</a></li>
+          <li><a href="#systreq">Чи Буде Instantbird працює на моєму комп'ютері?</a></li>
+          <li><a href="#getlatest">Що потрібно завантажити для встановлення останньої версії Instantbird?</a></li>
+          <li><a href="#installasuser">Чи можу я встановити Instantbird на моєму комп'ютері не будучи адміністратором?</a></li>
+          <li><a href="#sideinstall">Чи можу я встановити Instantbird і залишити мій попередній клієнт обміну повідомленнями на моєму комп'ютері?</a></li>
+          <li><a href="#installwindows">Як мені встановити Instantbird на Windows?</a></li>
+          <li><a href="#installmac">Як мені встановити Instantbird на Mac OS X?</a></li>
+          <li><a href="#installlinux">Як мені встановити Instantbird на Linux?</a></li>
+          <li><a href="#portable">Чи є Instantbird портативним (чи працює він з USB-флешки)?</a></li>
+        </ul></li>
+
+        <li>Оновлення<ul>
+          <li><a href="#autoupdate">Що мені потрібно робити, щоб завжди користуватись останньою версією Instantbird?</a></li>
+          <li><a href="#forceupdate">Що робити, якщо я хочу оновити програму зараз?</a></li>
+          <li><a href="#overwrite">Чи можу я встановити новішу версію поверх вже існуючої?</a></li>
+          <li><a href="#addonsafterupdate">Чи будуть мої доповнення працювати після оновлення?</a></li>
+        </ul></li>
+
+        <li>Видалення<ul>
+          <li><a href="#remove">Як мені видалити Instantbird?</a></li>
+        </ul></li>
+
+        <li>Користування<ul>
+          <li><a href="#severalaccounts">Чи можу я використовувати кілька акаунтів одночасно?</a></li>
+          <li><a href="#supportedprotocols">Які протоколи підтримуються?</a></li>
+          <li><a href="#facebookusername">Коли я намагаюся підключитися до свого акаунту Facebook, я отримую повідомлення про помилку <code>Invalid XMPP ID</code>. У чому проблема?</a></li>
+          <li><a href="#facebookauthorization">Коли я намагаюся підключитися до свого акаунту Facebook, я отримую повідомлення про помилку <code>Не Авторизовано</code>. У чому проблема?</a></li>
+          <li><a href="#getaddons">Де я можу отримати доповнення (розширення та теми)?</a></li>
+          <li><a href="#logsenabled">Чи створює Instantbird журнали моїх розмов і чатів?</a></li>
+          <li><a href="#logfolder">Де зберігаються журнали?</a></li>
+          <li><a href="#profilefolder">Де знаходиться тека з моїм профілем?</a></li>
+          <li><a href="#aboutconfig">Чи можна отримати доступ до about:config для тонкої зміни налаштувань?</a></li>
+        </ul></li>
+
+        <li>Розробка<ul>
+          <li><a href="#why">Чому ви розробляєте Instantbird?</a></li>
+          <li><a href="#license">Як Instantbird ліцензовано?</a></li>
+          <li><a href="#getthesource">Де знаходиться вихідний код?</a></li>
+          <li><a href="#team">Хто розробляє Instantbird?</a></li>
+          <li><a href="#mozilla">Чи спонсорує Mozilla цей проект?</a></li>
+          <li><a href="#getinvolved">Як я можу взяти участь?</a></li>
+          <li><a href="#translate">Чи можу я допомогти в перекладі на мою мову?</a></li>
+          <li><a href="#createaddons">Як я можу створити доповнення?</a></li>
+          <li><a href="#fxaddons">Чи можуть доповнення Firefox/Thunderbird працювати в Instantbird?</a></li>
+          <li><a href="#follow">Як я можу стежити за поточним станом розробки?</a></li>
+          <li><a href="#whatsnext">Що буде в наступній версії?</a></li>
+          <li><a href="#when">Коли буде випущена наступна основна версія?</a></li>
+          <li><a href="#futurefeatures">Чи буде Instantbird підтримувати передачу файлів/відео-чат/<em>вставте вашу улюблену функцію тут</em>?</a></li>
+        </ul></li>
+
+        <h2 class="borderbottom">Встановлення</h2>
+        <h3 class="first-title"><a class="no-link" name="useexistingaccounts">Чи потрібно мені надавати нову контактну інформацію моїм друзям?</a></h3>
+        <p>Ні, з Instantbird ви можете використовувати всі існуючі акаунти в рамках єдиного додатка. Якщо ви вже використовуєте обмін миттєвими повідомленнями, вам не потрібно створювати новий акаунт, щоб почати використовувати Instantbird.</p>
+
+        <h3><a class="no-link" name="systreq">Чи Буде Instantbird працює на моєму комп'ютері?</a></h3>
+        <p>Instantbird в даний час підтримує Windows 2000 та пізніші версії, Mac OS X 10.4 ата пізніші версії та Linux. Перейдіть на сторінку <a href="system-requirements.html">системних вимог</a> для отримання детальнішої інформації.</p>
+
+        <h3><a class="no-link" name="getlatest">Що потрібно завантажити для встановлення останньої версії Instantbird?</a></h3>
+        <p>Посилання на завантаження на <a href="/">головній сторінці</a> автоматично вибере для вас версію Instantbird, яка, вірогідно, найбільш підходить для вашої системи. Якщо ви хочете самі вибрати операційну систему та мову, зробіть це на <a href="download-all.html">сторінці завантаження</a>.</p>
+
+        <h3><a class="no-link" name="installasuser">Чи можу я встановити Instantbird на моєму комп'ютері не будучи адміністратором?</a></h3>
+        <p>Безумовно!</p>
+
+        <h3><a class="no-link" name="sideinstall">Чи можу я встановити Instantbird і залишити мій попередній клієнт обміну повідомленнями на моєму комп'ютері?</a></h3>
+        <p>Безумовно! Instantbird та інші клієнти можуть співіснувати на одному комп'ютері, не викликаючи жодних проблем.</p>
+
+        <h3><a class="no-link" name="installwindows">Як мені встановити Instantbird на Windows?</a></h3>
+        <p>Instantbird запакований для Windows як виконуваний інсталятор. Просто запустіть файл, який Ви завантажили, і нехай він проведе Вас через процес встановлення.</p>
+
+        <h3><a class="no-link" name="installmac">Як мені встановити Instantbird на Mac OS X?</a></h3>
+        <p>Клацніть двічі на образ диску Instantbird (файл з ім'ям, що закінчується на ".dmg") який ви завантажили. Потім перетягніть значок Instantbird в теку Програм.</p>
+
+        <h3><a class="no-link" name="installlinux">Як мені встановити Instantbird на Linux?</a></h3>
+        <p>Extract the content of the downloaded archive, and launch the file named "instantbird". If a popup dialog asks you if you want to edit or launch the file, select "launch".</p><p>We currently only provide 32-bit builds. In order to run these on a 64-bit system, you will have to install the 32-bit compatibility libraries provided by your distribution. For example, on Ubuntu, install the package <code>ia32-libs</code> by running <code>sudo apt-get install ia32-libs</code> from the command line.</p>
+
+        <h3><a class="no-link" name="portable">Чи є Instantbird портативним (чи працює він з USB-флешки)?</a></h3>
+        <p>Якщо ви запустите Instantbird з USB-флешки, він, за замовчуванням, збереже Ваш профіль користувача на жорсткому диску.</p><p>Ви можете вказати Instantbird, щоб він зберігав профіль користувача на флешку використавши аргумент командного рядка <code>-profile</code>.</p><p>Щоб це зробити, клацніть правою кнопкою миші на файл <code>instantbird.exe</code> і виберіть "Створити Ярлик", потім у властивостях ярлика змініть ціль додавши в кінець <code> -profile ./<em>назва_теки</em></code>.</p></p>
+
+
+        <h2 class="borderbottom">Оновлення</h2>
+        <h3 class="first-title"><a class="no-link" name="autoupdate">Що мені потрібно робити, щоб завжди користуватись останньою версією Instantbird?</a></h3>
+        <p>Нічого, за замовчуванням Instantbird буде періодично перевіряти наявність оновлень і просити вашого дозволу на своє оновлення при наявності нової версії.</p><p>Якщо вам не подобається така поведінка, ви можете змінити її в діалоговому вікні налаштувань.</p>
+
+        <h3><a class="no-link" name="forceupdate">Що робити, якщо я хочу оновити програму зараз?</a></h3>
+        <p>В меню є пункт <em>Перевірити на оновлення</em> (доступний з меню <em>Довідка</em>) так що вам не доведеться чекати запит на оновлення, якщо ви знаєте, що оновлення існує.</p>
+
+        <h3><a class="no-link" name="overwrite">Чи можу я встановити новішу версію поверх вже існуючої?</a></h3>
+        <p>Так.</p>
+
+        <h3><a class="no-link" name="addonsafterupdate">Чи будуть мої доповнення працювати після оновлення?</a></h3>
+        <p>Сумісні доповнення будуть працювати після оновлення. Якщо доповнення не сумісне з оновленою версією Instantbird, Instantbird запропонує перевірити, чи існує нова версія доповнення а також оновити його.</p><p>Якщо ваше доповнення більше не працює після оновлення, ви можете зв'язатися з автором, щоб дізнатися, чи оновлена версія знаходиться в процесі створення.</p>
+
+
+        <h2 class="borderbottom">Видалення</h2>
+        <h3 class="first-title"><a class="no-link" name="remove">Як мені видалити Instantbird?</a></h3>
+        <p>У Windows, якщо Ви використовували встановлювач, Ви можете видалити Instantbird з панелі управління, як Ви б видалили будь-який інший додаток.</p><p>В інших випадках, Ви можете просто видалити теку Instantbird.</p>
+   <p>Видалення Instantbird не видалить ваші акаунти, історію розмов, розширення чи інші доповнення. Ці дані зберігаються в вашій <a href="#profilefolder">теці профілю</a>.</p><p>Будь-яка версія Instantbird, яку ви встановите після видалення Instantbird продовжить використовувати дані з цієї теки.</p>
+
+
+        <h2 class="borderbottom">Користування</h2>
+        <h3 class="first-title"><a class="no-link" name="severalaccounts">Чи можу я використовувати кілька акаунтів одночасно?</a></h3>
+        <p>Так, Ви можете бути одночасно під'єднані до декількох акаунтів для будь-якого з підтримуваних протоколів.</p><p>Використовуйте <em>Менеджер облікових записів</em> (доступний з меню <em>Інструменти</em>) щоб додати інший акаунт.</p>
+
+        <h3><a class="no-link" name="supportedprotocols">Які протоколи підтримуються?</a></h3>
+        <p>Currently Instantbird supports by default: AIM, Bonjour, Facebook Chat, Gadu-Gadu, Google Talk, Groupwise, ICQ, IRC, MSN, MySpaceIM, Netsoul, Odnoklassniki, QQ, Simple, Twitter, VKontakte, XMPP, Yahoo and Yahoo JAPAN.</p><p>Додаткові плагіни протоколів можуть бути встановлені як <a href="#getaddons">доповнення</a>.</p>
+
+        <h3><a class="no-link" name="facebookusername">Коли я намагаюся підключитися до свого акаунту Facebook, я отримую повідомлення про помилку <code>Invalid XMPP ID</code>. У чому проблема?</a></h3>
+        <p>Ви ввели в якості імені користувача адресу електронної пошти, яку Ви використовуєте для входу на веб-сайт Facebook. Чат Facebook очікує введення в поле Вашого унікального імені користувача. Перейдіть на <a href="http://www.facebook.com/username/">http://www.facebook.com/username/</a> для його перевірки.</p>
+
+        <h3><a class="no-link" name="facebookauthorization">Коли я намагаюся підключитися до свого акаунту Facebook, я отримую повідомлення про помилку <code>Не Авторизовано</code>. У чому проблема?</a></h3>
+        <p>Вам необхідно включити XMPP під'єднання до вашого акаунту Facebook.<br><ol><li>Відвідайте <a href="http://www.facebook.com/sitetour/chat.php">Чат Facebook</a> в той час як увійшли в свій акаунт Facebook для ввімкнення XMPP-доступу.</li><li>Вийдіть з веб-сайту Facebook.</li><li>Ввійдіть на сайт Facebook знову.</li><li>Підключіть ваш Facebook акаунт в Instantbird ("Інструменти" > "Облікові записи" та натисніть кнопку "З'єднати" на Вашому акаунті Facebook), і з'єднання повинне завершитись успішно.</li></ol></p>
+
+        <h3><a class="no-link" name="getaddons">Де я можу отримати доповнення (розширення та теми)?</a></h3>
+        <p>Ви можете здійснити пошук доповнень в закладці <em>Ще Додатки</em> менеджера Додатків (доступного з меню <em>Інструменти</em>) де Ви побачите рекомендовані доповнення. Також Ви можете перейти на <a href="https://addons.instantbird.org/">веб-сайт доповнень для Instantbird</a> да Ви зможете переглянути експериментальні доповнення та залишити коментарі.</p>
+
+        <h3><a class="no-link" name="logsenabled">Чи створює Instantbird журнали моїх розмов і чатів?</a></h3>
+        <p>Так, Instantbird створює журнали за замовчуванням. Використайте налаштування на панелі <em>Приватність</em> в діалозі <em>Параметри</em> щоб змінити це на свій смак. Якщо ви хочете поглянути на власне файли, скористайтесь кнопкою <em>Показати теку журналів...</em> на тій же панелі.</p>
+
+        <h3><a class="no-link" name="logfolder">Де зберігаються журнали?</a></h3>
+        <p>Ім'я та шлях до лог-файлів є наступним: <code><em><a href="#profilefolder">шлях_до_профілю</a></em>/logs/<em>протокол</em>/<em>ім'я_приятеля_або_назва_чату</em>/<em>дата_і_час</em>.txt</code> (замініть частини курсивом фактичними значеннями).</p>
+
+        <h3><a class="no-link" name="profilefolder">Де знаходиться тека з моїм профілем?</a></h3>
+        <p>Вона розташована в одному з наступних місць в залежності від вашої операційної системи:
+<table>
+<tr><td>Windows</td><td><code>%appdata%\Instantbird\Profiles\</code> (точно скопіюйте і вставте це в провіднику Windows)</td></tr>
+<tr><td>Mac OS X</td><td><code>~/Library/Application Support/Instantbird/Profiles/</code></td></tr>
+<tr><td>Linux (Unix)</td><td><code>~/.instantbird/</code></td></tr>
+</table>
+<p>Будь-яка версія Instantbird, яку ви встановите після видалення Instantbird продовжить використовувати дані з цієї теки профілю.</p></p>
+
+        <h3><a class="no-link" name="aboutconfig">Чи можна отримати доступ до about:config для тонкої зміни налаштувань?</a></h3>
+        <p>Хоча ми не рекомендуємо використовувати його, about:config доступний з закладки <em>Розширені</em> в діалозі налаштувань.</p>
+
+
+        <h2 class="borderbottom">Розробка</h2>
+        <h3 class="first-title"><a class="no-link" name="why">Чому ви розробляєте Instantbird?</a></h3>
+        <p>Ми пропонуємо вам Instantbird тому що <a href="http://www.instantbird.org/">ми вважаємо, що миттєвий обмін повідомленнями є важливою складовою при роботі в Інтернеті</a>.</p>
+
+        <h3><a class="no-link" name="license">Як Instantbird ліцензовано?</a></h3>
+        <p>Instantbird is licensed to you under the terms of the GNU GPL license version 2.0 or later (because it uses libpurple which is GPL licensed). However, most of the source code is also licensed with the Mozilla Public License (MPL), version 2.0.</p>
+
+        <h3><a class="no-link" name="getthesource">Де знаходиться вихідний код?</a></h3>
+        <p>Архів вихідних текстів кожної випущеної версії можна отримати на <a href="download-all.html">сторінці завантаження</a>. Останній код можна отримати з нашого репозиторію Mercurial, слідуючи <a href="https://wiki.instantbird.org/Instantbird:Compiling">інструкціям для побудови</a>.</p>
+
+        <h3><a class="no-link" name="team">Хто розробляє Instantbird?</a></h3>
+        <p>Ми є <a href="about.html">маленькою командою</a> високо мотивованих людей, але ми сподіваємося, багато людей, включаючи Вас, приєднаються до нас, щоб зробити цей проект ще кращим.</p>
+
+        <h3><a class="no-link" name="mozilla">Чи спонсорує Mozilla цей проект?</a></h3>
+        <p>Mozilla Foundation не допомагала нам матеріально.</p><p>Логотип "Працює на Mozilla" на нашій головній сторінці означає, що Instantbird залежить від коду і технологій, які розробляються спільнотою Mozilla. Ми дуже вдячні спільноті Mozilla в цілому за дивовижні технології, на яких основана Instantbird.</p>
+
+        <h3><a class="no-link" name="getinvolved">Як я можу взяти участь?</a></h3>
+        <p>Існує кілька способів, щоб взяти участь у проекті. Вам не потрібно бути програмістом, щоб допомогти нам. Дивіться <a href="http://www.instantbird.org/#getinvolved">взяти участь</a> за детальною інформацією.</p>
+
+        <h3><a class="no-link" name="translate">Чи можу я допомогти в перекладі на мою мову?</a></h3>
+        <p>Так! Дивіться <a href="http://wiki.instantbird.org/Instantbird:Translation">сторінку в вікі по перекладу</a> за подробицями.</p>
+
+        <h3><a class="no-link" name="createaddons">Як я можу створити доповнення?</a></h3>
+        <p>Дивіться <a href="http://wiki.instantbird.org/Instantbird:Extension">сторінку в вікі по доповненнях</a>.</p>
+
+        <h3><a class="no-link" name="fxaddons">Чи можуть доповнення Firefox/Thunderbird працювати в Instantbird?</a></h3>
+        <p>Не 'з коробки', але більшість з них можуть бути адаптовані. Дивіться <a href="http://wiki.instantbird.org/Instantbird:Porting_Firefox_Extensions">сторінку адаптації розширень Firefox</a>.</p>
+
+        <h3><a class="no-link" name="follow">Як я можу стежити за поточним станом розробки?</a></h3>
+        <p>Щоб залишатися в курсі найважливіших новин, Ви можете відвідувати <a href="http://blog.instantbird.org/">наш блог</a>.</p><p>Якщо Ви хочете слідувати нашій дискусії, то Ви можете приєднатися до нас в нашому IRC-чаті: <a href="irc://irc.mozilla.org/#instantbird">#instantbird на сервері irc.mozilla.org</a>.</p><p><a href="http://ftp.instantbird.com/instantbird/nightly/latest-trunk/">Нічні збірки</a> будуються кожного дня, тому люди можуть допомогти нам тестування функції, які тільки що були додані. Ви можете вільно використовувати їх, але будьте обережні! Вони можуть бути нестабільними, і якщо Ви вирішите використовувати їх, передбачається, що Ви допоможете нам у тестуванні недосконалих функцій, а не просто будете як та зухвала дитина, яка отримала нову іграшку першою. Тому якщо Ви знайшли помилки, будь ласка <a href="http://bugzilla.instantbird.org/">повідомляйте про них</a> (<a href="https://wiki.instantbird.org/Instantbird:Bugzilla">Заповнення звіту про помилку</a>: те, що повинен містити звіт про помилку) замість того щоб скаржитися.</p>
+
+        <h3><a class="no-link" name="whatsnext">Що буде в наступній версії?</a></h3>
+        <p>Дивіться <a href="http://wiki.instantbird.org/Instantbird:Roadmap">план розвитку</a>.</p>
+
+        <h3><a class="no-link" name="when">Коли буде випущена наступна основна версія?</a></h3>
+        <p>Ми в захваті від цього проекту і раді, що Ви поділяєте наше бажання рухатися вперед як можна швидше. Однак через характер розробки програмного забезпечення, визначення термінів є проблематичним, і ми вважаємо якість підтримки важливішою.</p>
+
+        <h3><a class="no-link" name="futurefeatures">Чи буде Instantbird підтримувати передачу файлів/відео-чат/<em>вставте вашу улюблену функцію тут</em>?</a></h3>
+        <p>Дивіться <a href="http://wiki.instantbird.org/Instantbird:Roadmap">план розвитку</a>.</p><p>Не соромтесь обговорювати з нами речі, які не перераховані в плані, щоб дізнатись, чи вони нас цікавить, або чи вони можуть бути реалізовані у вигляді доповнень.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">Команда Instantbird</a>.</p>
+      <p class="small-text">Всі назви продуктів і торгові марки є власністю їх відповідних власників.</p>
+    </div>
+  </div>
+
+</body>
+</html>

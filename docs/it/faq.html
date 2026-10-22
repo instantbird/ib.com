@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - Domande Frequenti</title>
+  <link rel="stylesheet" type="text/css" href="../theme/home.css" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Home</span></a>
+        <span></span><a href="http://blog.instantbird.org/">Novità</a><a href="https://addons.instantbird.org/">Componenti aggiuntivi</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Sviluppatori</a><a href="about.html">Informazioni</a>
+
+      </div>
+
+
+      <div id="page" class="faq condensed">
+
+        <h1>Domande Frequenti</h1>
+
+        <h2 class="borderbottom">Sommario</h2>
+
+        <li>Installazione<ul>
+          <li><a href="#useexistingaccounts">Devo inviare nuove informazioni di contatto ai miei amici?</a></li>
+          <li><a href="#systreq">Instantbird funzionerà sul mio computer?</a></li>
+          <li><a href="#getlatest">Cosa devo scaricare per ottenere l'ultima versione di Instantbird?</a></li>
+          <li><a href="#installasuser">Posso installare Instantbird senza essere amministratore del mio computer?</a></li>
+          <li><a href="#sideinstall">Posso installare Instantbird e mantenere sul computer miei precedenti client di messaggistica?</a></li>
+          <li><a href="#installwindows">Come posso installare Instantbird su Windows?</a></li>
+          <li><a href="#installmac">Come posso installare Instantbird su Mac OS X?</a></li>
+          <li><a href="#installlinux">Come posso installare Instantbird su Linux?</a></li>
+          <li><a href="#portable">Instantbird è portatile (usabile da una chiavetta USB)?</a></li>
+        </ul></li>
+
+        <li>Aggiornamento<ul>
+          <li><a href="#autoupdate">C'è qualcosa che devo fare per usare sempre l'ultima versione di Instantbird?</a></li>
+          <li><a href="#forceupdate">E se voglio aggiornare subito?</a></li>
+          <li><a href="#overwrite">Posso installare una nuova versione sopra una installazione esistente?</a></li>
+          <li><a href="#addonsafterupdate">I miei componenti aggiuntivi funzioneranno sempre dopo l'aggiornamento?</a></li>
+        </ul></li>
+
+        <li>Disinstallazione<ul>
+          <li><a href="#remove">Come posso rimuovere Instantbird?</a></li>
+        </ul></li>
+
+        <li>Uso<ul>
+          <li><a href="#severalaccounts">Posso usare più di un account per volta?</a></li>
+          <li><a href="#supportedprotocols">Quali protocolli sono supportati?</a></li>
+          <li><a href="#facebookusername">Quando provo a connettermi a Facebook vierne visualizzato l'errore <code>ID XMPP non valido</code>. Qual'è il problema?</a></li>
+          <li><a href="#facebookauthorization">Quando provo a connettermi al mio account Facebook si presenta l'errore <code>Non Autorizzato</code>. Qual'è il problema?</a></li>
+          <li><a href="#getaddons">Dove posso trovare i componenti aggiuntivi (estensioni e temi)?</a></li>
+          <li><a href="#logsenabled">Instantbird conserva la cronologia delle mie conversazioni?</a></li>
+          <li><a href="#logfolder">Dove è conservata la cronologia?</a></li>
+          <li><a href="#profilefolder">Dov'è la cartella del mio profilo?</a></li>
+          <li><a href="#aboutconfig">Posso accedere a about:config per specificare meglio le mie preferenze?</a></li>
+        </ul></li>
+
+        <li>Sviluppo<ul>
+          <li><a href="#why">Perchè sviluppate Instantbird?</a></li>
+          <li><a href="#license">Con quale licenza è rilasciato Instantbird?</a></li>
+          <li><a href="#getthesource">Dov'è il codice sorgente?</a></li>
+          <li><a href="#team">Chi fa Instantbird?</a></li>
+          <li><a href="#mozilla">Mozilla è sponsor del progetto?</a></li>
+          <li><a href="#getinvolved">Come posso contribuire?</a></li>
+          <li><a href="#translate">Posso aiutarvi traducendo Instantbird nella mia lingua?</a></li>
+          <li><a href="#createaddons">Come posso creare componenti aggiuntivi?</a></li>
+          <li><a href="#fxaddons">I componenti aggiuntivi per Firefox/Thunderbird funzionano con Instantbird?</a></li>
+          <li><a href="#follow">Come posso seguire l'attuale sviluppo?</a></li>
+          <li><a href="#whatsnext">Cosa ci sarà nella prossima versione?</a></li>
+          <li><a href="#when">Quando uscirà la nuova versione?</a></li>
+          <li><a href="#futurefeatures">Instantbird supporterà il trasferimento file, le chat video, <em>la mia funzione preferita</em>?</a></li>
+        </ul></li>
+
+        <h2 class="borderbottom">Installazione</h2>
+        <h3 class="first-title"><a class="no-link" name="useexistingaccounts">Devo inviare nuove informazioni di contatto ai miei amici?</a></h3>
+        <p>No, con Instantbird puoi usare tutti i tuoi account di messaggistica esistenti in una sola applicazione. Se usi già la messaggistica istantanea, non hai bisogno di creare un nuovo account per iniziare ad usare Instantbird.</p>
+
+        <h3><a class="no-link" name="systreq">Instantbird funzionerà sul mio computer?</a></h3>
+        <p>Instantbird attualmente supporta Windows XP SP2 o successivi, Mac OS X 10.5 o successivi, e Linux. Leggi la pagine dei <a href="system-requirements.html">requisiti di sistema</a> per maggiori dettagli.</p>
+
+        <h3><a class="no-link" name="getlatest">Cosa devo scaricare per ottenere l'ultima versione di Instantbird?</a></h3>
+        <p>Un collegamento sulla <a href="/">homepage</a> selezionerà automaticamente la versione di Instantbird più adatta al tuo sistema. Se vuoi selezionare manualmente il sistema operativo e la lingua, vai alla <a href="download-all.html">pagina di download</a>.</p>
+
+        <h3><a class="no-link" name="installasuser">Posso installare Instantbird senza essere amministratore del mio computer?</a></h3>
+        <p>Assolutamente si!</p>
+
+        <h3><a class="no-link" name="sideinstall">Posso installare Instantbird e mantenere sul computer miei precedenti client di messaggistica?</a></h3>
+        <p>Assolutamente si! Instantbird ed gli altri client possono convivere sullo stesso computer senza causare nessun problema.</p>
+
+        <h3><a class="no-link" name="installwindows">Come posso installare Instantbird su Windows?</a></h3>
+        <p>Instantbird è rilasciato per Windows come un eseguibile auto installante. Semplicemente lancia il file che hai scaricato e lasciati guidare dal processo di installazione.</p>
+
+        <h3><a class="no-link" name="installmac">Come posso installare Instantbird su Mac OS X?</a></h3>
+        <p>Fai doppio click sull'immagine disco di Instantbird (un file che finisce per ".dmg") che hai scaricato. Poi trascina l'icona di Instantbird nella cartella Applicazioni.</p>
+
+        <h3><a class="no-link" name="installlinux">Come posso installare Instantbird su Linux?</a></h3>
+        <p>Extract the content of the downloaded archive, and launch the file named "instantbird". If a popup dialog asks you if you want to edit or launch the file, select "launch".</p><p>We currently only provide 32-bit builds. In order to run these on a 64-bit system, you will have to install the 32-bit compatibility libraries provided by your distribution. For example, on Ubuntu, install the package <code>ia32-libs</code> by running <code>sudo apt-get install ia32-libs</code> from the command line.</p>
+
+        <h3><a class="no-link" name="portable">Instantbird è portatile (usabile da una chiavetta USB)?</a></h3>
+        <p>Se lanci Instantbird da una chiavetta USB, salverà il tuo profilo sull'hard disk del computer per impostazione predefinita.</p><p>Puoi impostare Instantbird per salvare il tuo profilo sulla chiavetta USB usando l'opzione <code>-profile</code> da riga di comando.</p><p>Per fare questo, clicca con il tasto destro sul file <code>instantbird.exe</code> e seleziona "crea scorciatoia", poi nelle proprietà della scorciatoia, aggiungi <code> -profile ./<em>foldername</em></code> dopo "instantbird.exe".</p></p>
+
+
+        <h2 class="borderbottom">Aggiornamento</h2>
+        <h3 class="first-title"><a class="no-link" name="autoupdate">C'è qualcosa che devo fare per usare sempre l'ultima versione di Instantbird?</a></h3>
+        <p>No, Instantbird si connetterà periodicamente per verificare che ci siano aggiornamenti e ti chiederà il permesso per installare una nuova versione, se questa viene trovata.</p><p>Se questo non ti piace, puoi sempre cambiarlo nella finestrra delle preferenze.</p>
+
+        <h3><a class="no-link" name="forceupdate">E se voglio aggiornare subito?</a></h3>
+        <p>C'è una voce di menù <em>Controlla aggiornamenti</em> (accessibile dal menù <em>Aiuto</em>) che ti permette di aggiornare subito Instantbird, senza attendere il controllo periodico.</p>
+
+        <h3><a class="no-link" name="overwrite">Posso installare una nuova versione sopra una installazione esistente?</a></h3>
+        <p>Si.</p>
+
+        <h3><a class="no-link" name="addonsafterupdate">I miei componenti aggiuntivi funzioneranno sempre dopo l'aggiornamento?</a></h3>
+        <p>I componenti aggiuntivi compatibili funzioneranno sempre. Se un componente non è più compatibile con la nuova versione di Instantbird, Instantbird ti proporrà di controllare se esiste una versione più recente del componente e di aggiornarlo.</p><p>Se il tuo componente non funziona più dopo un aggiornamento, contattane l'autore per sapere se sta lavorando per aggiornare il componente..</p>
+
+
+        <h2 class="borderbottom">Disinstallazione</h2>
+        <h3 class="first-title"><a class="no-link" name="remove">Come posso rimuovere Instantbird?</a></h3>
+        <p>Su Windows, se hai usato il pacchetto auto installante, puoi disinstallare Instantbird dal pannello di controllo come disinstalleresti un qualsiasi altro programma.</p><p>In tutti gli altri casi, puoi semplicemente eliminare la cartella di Instantbird.</p>
+   <p>La rimozione di Instantbird non eliminerà i tuoi account, lo storico delle conversazioni, le estensioni e gli altri componenti. Questi dati sono salvati nella tua <a href="#profilefolder">cartella di profilo</a>.</p><p>Ogni versione di Instantbird che installi successivamente continuerà ad usare i dati presenti in quella cartella.</p>
+
+
+        <h2 class="borderbottom">Uso</h2>
+        <h3 class="first-title"><a class="no-link" name="severalaccounts">Posso usare più di un account per volta?</a></h3>
+        <p>Si, ti puoi connettere contemporaneamente a più di un account del tipo supportato da Instantbird.</p><p>Usa la <em>Gestione account</em> (accessibile dal menù <em>Strumenti</em>) per aggiungere un altro account.</p>
+
+        <h3><a class="no-link" name="supportedprotocols">Quali protocolli sono supportati?</a></h3>
+        <p>Currently Instantbird supports by default: AIM, Bonjour, Facebook Chat, Gadu-Gadu, Google Talk, Groupwise, ICQ, IRC, MSN, MySpaceIM, Netsoul, Odnoklassniki, QQ, Simple, Twitter, VKontakte, XMPP, Yahoo and Yahoo JAPAN.</p><p>Estensioni per protocolli addizionali possono essere installati come <a href="#getaddons">componenti aggiuntivi</a>.</p>
+
+        <h3><a class="no-link" name="facebookusername">Quando provo a connettermi a Facebook vierne visualizzato l'errore <code>ID XMPP non valido</code>. Qual'è il problema?</a></h3>
+        <p>Hai usato come username l'indirizzo email che usi per entrare nel sito web di Facebook. La chat di Facebook si aspetta che tu usi il tuo username univoco in questo campo. Vai su <a href="http://www.facebook.com/username/">http://www.facebook.com/username/</a> per controllarlo.</p>
+
+        <h3><a class="no-link" name="facebookauthorization">Quando provo a connettermi al mio account Facebook si presenta l'errore <code>Non Autorizzato</code>. Qual'è il problema?</a></h3>
+        <p>Devi abilitare le connessioni XMPP per il tuo account Facebook.<br><ol><li>Visita la <a href="http://www.facebook.com/sitetour/chat.php">Chat Facebook</a> mentre sei dentro Facebook per abilitare l'accesso XMPP.</li><li>Esegui la disconnessione dal sito di Facebook.</li><li>Esegui di nuovo l'accesso al sito di Facebook.</li><li>Connetti il tuo account Facebook dentro Instantbird ("Strumenti" > "Account" e clicca sul pulsante "Connetti" sul tuo account Facebook), dovrebbe completarsi con successo.</li></ol></p>
+
+        <h3><a class="no-link" name="getaddons">Dove posso trovare i componenti aggiuntivi (estensioni e temi)?</a></h3>
+        <p>Puoi cercare i componenti dalla scheda <em>Esplora</em> della gestione componenti aggiuntivi (accessibile dal menù <em>Strumenti</em>) dove troverai alcuni componenti aggiuntivi raccomandati. Per vederne di più, puoi andare sul <a href="https://addons.instantbird.org/">sito componenti aggiuntivi di Instantbird</a> dove puoi anche sfogliare i componenti sperimentali e lasciare i tuoi commenti.</p>
+
+        <h3><a class="no-link" name="logsenabled">Instantbird conserva la cronologia delle mie conversazioni?</a></h3>
+        <p>Si, Instantbird mantiene la cronologia per impostaizone predefinita. Usa le impostazioni nella scheda <em>Privacy</em> nella finestra <em>Preferenze</em> per configurarlo come preferisci. Se vuoi controllare la cronologia, usa il pulsante <em>Mostra cartella cronologia...</em> nella stessa scheda.</p>
+
+        <h3><a class="no-link" name="logfolder">Dove è conservata la cronologia?</a></h3>
+        <p>Il nome ed il percorso dei file di cronologia sono i seguenti: <code><em><a href="#profilefolder">percorso del profilo</a></em>/logs/<em>protocollo</em>/<em>nome contatto o conversazione</em>/<em>data e ora</em>.txt</code> (sostituisci le parti in corsivo con i valori reali).</p>
+
+        <h3><a class="no-link" name="profilefolder">Dov'è la cartella del mio profilo?</a></h3>
+        <p>Si trova in una delle seguenti posizioni, a seconda del tuo sistema operativo:
+<table>
+<tr><td>Windows</td><td><code>%appdata%\Instantbird\Profiles\</code> (copia e incolla esattamente questo in Windows explorer)</td></tr>
+<tr><td>Mac OS X</td><td><code>~/Library/Application Support/Instantbird/Profiles/</code></td></tr>
+<tr><td>Linux (Unix)</td><td><code>~/.instantbird/</code></td></tr>
+</table>
+<p>Ogni versione di Instantbird che installi successivamente continuerà ad usare i dati presenti in quella cartella.</p></p>
+
+        <h3><a class="no-link" name="aboutconfig">Posso accedere a about:config per specificare meglio le mie preferenze?</a></h3>
+        <p>Anche se lo sconsigliamo, about:config è accessibile dalla scheda <em>Avanzate</em> della finestra delle preferenze.</p>
+
+
+        <h2 class="borderbottom">Sviluppo</h2>
+        <h3 class="first-title"><a class="no-link" name="why">Perchè sviluppate Instantbird?</a></h3>
+        <p>Ti diamo Instantbird perchè <a href="http://www.instantbird.org/">crediamo che la messaggistica istantanea sia una parte importante della tua vita in rete</a>.</p>
+
+        <h3><a class="no-link" name="license">Con quale licenza è rilasciato Instantbird?</a></h3>
+        <p>Instantbird is licensed to you under the terms of the GNU GPL license version 2.0 or later (because it uses libpurple which is GPL licensed). However, most of the source code is also licensed with the Mozilla Public License (MPL), version 2.0.</p>
+
+        <h3><a class="no-link" name="getthesource">Dov'è il codice sorgente?</a></h3>
+        <p>Un archivio con il codice sorgnete di ogni versione rilasciata è disponibile alla pagina <a href="download-all.html">pagina di download</a>. L'ultima versione del codice in sviluppo può essere scaricata dal nostro archivio Mercurial seguendo le <a href="https://wiki.instantbird.org/Instantbird:Compiling">instruzioni per la compilazione</a>.</p>
+
+        <h3><a class="no-link" name="team">Chi fa Instantbird?</a></h3>
+        <p>Siamo <a href="about.html">una piccola squadra</a> di persone molto motivate, ma speriamo che molti altri, insieme a te, si uniranno a noi per rendere questo progetto ancora migliore.</p>
+
+        <h3><a class="no-link" name="mozilla">Mozilla è sponsor del progetto?</a></h3>
+        <p>La fondazione Mozilla non ci ha aiutato finanziariamente.</p><p>Il logo "Basato su Mozilla" sul nostro sito significa che Instantbird è basato su codice e tecnologie sviluppate dalla comunità Mozilla. Siamo molto riconoscenti verso tutta la comunità Mozilla per le fantastiche tecnologie sulle quali Instantbird è basato.</p>
+
+        <h3><a class="no-link" name="getinvolved">Come posso contribuire?</a></h3>
+        <p>Ci sono molti modi di entrare a far parte del progetto. No c'è bisogno di essere un programmatore di computer per aiutarci. There are several ways to take part in the project. You don't need to be a computer programmer to help us. Vai a See <a href="http://www.instantbird.org/#getinvolved">partecipa</a> per maggiori dettagli.</p>
+
+        <h3><a class="no-link" name="translate">Posso aiutarvi traducendo Instantbird nella mia lingua?</a></h3>
+        <p>Si! Vai alla <a href="http://wiki.instantbird.org/Instantbird:Translation">pagina wiki delle traduzioni</a> per maggiori dettagli.</p>
+
+        <h3><a class="no-link" name="createaddons">Come posso creare componenti aggiuntivi?</a></h3>
+        <p>Leggi la <a href="http://wiki.instantbird.org/Instantbird:Extension">pagina wiki delle estensioni</a>.</p>
+
+        <h3><a class="no-link" name="fxaddons">I componenti aggiuntivi per Firefox/Thunderbird funzionano con Instantbird?</a></h3>
+        <p>Non automaticamente, ma la maggior parte può essere adattata. Leggi la <a href="http://wiki.instantbird.org/Instantbird:Porting_Firefox_Extensions">pagina di adattamento componenti di Firefox</a>.</p>
+
+        <h3><a class="no-link" name="follow">Come posso seguire l'attuale sviluppo?</a></h3>
+        <p>Per rimanere informato su importanti novità sullo sviluppo, probabilmente vorrai seguire il <a href="http://blog.instantbird.org/">nostro blog</a>.</p><p>Se vuoi seguire le nostre discussioni, ti invitiamo ad unirti alla nostra chat su IRC: <a href="irc://irc.mozilla.org/#instantbird">#instantbird sul server irc.mozilla.org</a>.</p><p>Le <a href="http://ftp.instantbird.com/instantbird/nightly/latest-trunk/">Versioni "nightly"</a> vengono pubblicate ogni giorno affinchè tu possa seguire e lo sviluppo e collaudare le nuove funzionalit che sono state aggiunte di recente. Sentiti libero di usarle, ma attento! Possono essere instabili e, se decidi di usarle, ti preghiamo di farlo per aiutarci a provare le future funzionalità, non solo per avere l'ultimo giocattolino a tua disposizione. Quindi se trovi un bug, per favore <a href="http://bugzilla.instantbird.org/">segnalalo</a> (<a href="https://wiki.instantbird.org/Instantbird:Bugzilla">Inviando un bug</a> come si deve invece di lamentarti).</p>
+
+        <h3><a class="no-link" name="whatsnext">Cosa ci sarà nella prossima versione?</a></h3>
+        <p>Leggi la <a href="http://wiki.instantbird.org/Instantbird:Roadmap">roadmap</a>.</p>
+
+        <h3><a class="no-link" name="when">Quando uscirà la nuova versione?</a></h3>
+        <p>Siamo molto coinvolti in questo progetto e compiaciuti che tu condivida con noi il desiderio di andare avanti il più velocemente possibile. Comunque, vista la natura dello sviluppo del software, ci possono essere problemi a rispettare le scadenze. Consideriamo infatti la qualità più importante della velocità di rilascio.</p>
+
+        <h3><a class="no-link" name="futurefeatures">Instantbird supporterà il trasferimento file, le chat video, <em>la mia funzione preferita</em>?</a></h3>
+        <p>Leggi la <a href="http://wiki.instantbird.org/Instantbird:Roadmap">roadmap</a>.</p><p>Sentiti libero di discutere con noi le cose che non sono elencate per sapere se possono essere implementate come componente aggiuntivo.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">Il team di Instantbird</a>.</p>
+      <p class="small-text">Tutti i prodotti e i marchi registrati appartengono ai rispettivi proprietari.</p>
+    </div>
+  </div>
+
+</body>
+</html>

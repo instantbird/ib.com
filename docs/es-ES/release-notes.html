@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - notas de la versión</title>
+  <link rel="stylesheet" type="text/css" href="../theme/home.css" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Inicio</span></a>
+        <span></span><a href="http://blog.instantbird.org/">Noticias</a><a href="https://addons.instantbird.org/">Complementos</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Desarrolladores</a><a href="about.html">Acerca de</a>
+
+      </div>
+
+
+      <div id="page">
+
+        <ul id="index-box">
+          <li><a href="features.html">Características</a></li>
+          <li><a href="download-all.html">Sistemas e idiomas</a></li>
+          <li>Notas de la versión</li>
+          <li style="border-bottom-style: none;"><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.win32.installer.exe">¡Consigue Instantbird 1.5 ahora	!</a></li>
+        </ul>
+
+        <h1>Instantbird 1.5 - Notas de la versión</h1>
+
+        <h2>Comprueba las novedades y los problemas conocidos en relación a la última versión de Instantbird. Como siempre, te animamos a que nos cuentes lo que piensas, <a href="about.html#get_in_touch">ofreciendo opiniones y sugerencias</a> o <a href="http://bugzilla.instantbird.org">registrando un bug en Bugzilla</a>.</h2>
+
+<h2 class="borderbottom">What's new?</h2>
+
+<ul class="whatsnewbullets">
+
+<li>Creating a <strong>new conversation tab</strong> has been made easier.<ul>
+ <li>Clicking the '+' button in a conversation window shows a list of conversations that can be started with a single click.</li>
+ <li>The list is sorted with a frecency algorithm, taking into account how often and how recently you've talked to each contact.</li>
+ <li>This list also automatically includes the channels advertised by the IRC servers you are connected to.</li>
+</ul></li>
+
+<li><strong>New tooltips</strong> that better fit the style of Instantbird</li>
+
+<li>Improved Multi-user chats user interface:<ul>
+ <li>Participants now have context menus that allow you to open private conversations or add them as buddies.</li>
+ <li>Highlighted nicks in chat rooms now have tooltips and context menus.</li>
+</ul></li>
+
+<li>Auto-joined chat rooms that have been put on hold will stay on hold after a restart.</li>
+
+<li>A list of alternate nicks for IRC can be configured, in case your preferred nick is taken when you connect.</li>
+
+<li>about: pages (e.g. about:config) can now easily be opened with the /about command (e.g. /about config).</li>
+
+<li>Retina display support on Mac OS X.</li>
+
+<li>Google Talk and Hangouts Android users are now shown as mobile.</li>
+
+<li>Google Hangouts users will no longer appear as always typing.</li>
+
+<li>Better support for displaying RTL languages in conversations.</li>
+
+<li>The vKontakte protocol was removed as the vKontakte service dropped support for connecting with an XMPP client.</li>
+
+<li>New for developers: New API to add tab panels with arbitrary content to conversation windows: <a href="http://hg.instantbird.org/instantbird/file/94b13a23dac6/instantbird/content/tabbrowser.xml#l427">in-code documentation</a>.</li>
+
+<li>Updated to Mozilla 25.</li>
+
+<li>Various minor bugs and a few crashers fixed.</li>
+
+<li>And more... read the full <a href="../ChangeLog-1.5">ChangeLog</a> for details of all code changes since Instantbird 1.4.</li>
+
+</ul>
+
+<h2 class="borderbottom">Known Issues:</h2>
+
+<ul>
+
+<li>NVDA users should update to 2014.1 to work around a bug in the Mozilla platform that leads to "Unknown" being said when scrolling through the contact list.</li>
+
+<li>Clicking on URLs doesn't work on some newer Linux distributions, to work around this, open about:config (/about config in a conversation) and search for network.protocol-handler.warn-external, set all of these values to true. You will now be prompted for a program after clicking these links. See <a href="https://bugzilla.instantbird.org/show_bug.cgi?id=1995">bug 1995</a>.</li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">El equipo de Instantbird</a>.</p>
+      <p class="small-text">Todos los nombres y marcas registradas de productos son propiedad de sus respectivos dueños.</p>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var ua = navigator.userAgent;
+  var os = ua.indexOf('Mac') != -1 ? 'mac' : ua.indexOf('Linux') != -1 ? 'linux' : null;
+  if (!os) return;
+  [{"tag": "a", "n": 8, "key": "href", "val": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.win32.installer.exe", "mac": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.mac.dmg"}, "linux": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.linux-i686.tar.bz2"}}].forEach(function (e) {
+    if (e.text) {
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode())
+        if (walker.currentNode.nodeValue.trim() == e.text)
+          walker.currentNode.nodeValue = walker.currentNode.nodeValue.replace(e.text, e[os]);
+      return;
+    }
+    var el = document.getElementsByTagName(e.tag)[e.n];
+    if (!el || el.getAttribute(e.key) != e.val) return;
+    for (var a in e[os])
+      e[os][a] === null ? el.removeAttribute(a) : el.setAttribute(a, e[os][a]);
+  });
+})();
+</script>
+</body>
+</html>

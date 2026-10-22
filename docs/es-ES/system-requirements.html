@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - Requisitos del sistema</title>
+  <link rel="stylesheet" type="text/css" href="../theme/home.css" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Inicio</span></a>
+        <span></span><a href="http://blog.instantbird.org/">Noticias</a><a href="https://addons.instantbird.org/">Complementos</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Desarrolladores</a><a href="about.html">Acerca de</a>
+
+      </div>
+
+
+      <div id="page">
+
+        <ul id="index-box">
+          <li><a href="features.html">Características</a></li>
+          <li><a href="download-all.html">Sistemas e idiomas</a></li>
+          <li><a href="release-notes.html">Notas de la versión</a></li>
+          <li style="border-bottom-style: none;"><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.win32.installer.exe">¡Consigue Instantbird 1.5 ahora	!</a></li>
+        </ul>
+
+        <h1>Requisitos del sistema</h1>
+        <h2>Los siguientes son los requisitos de sistema mínimos necesarios para ejecutar Instantbird.</h2>
+
+        <h2 class="borderbottom icowin clear-float">Windows</h2>
+        <ul>
+          <li>Sistemas operativos: Microsoft Windows XP SP 2, Windows Server 2003, Windows Vista, Windows 7, Windows 8</li>
+          <li>128MB de RAM</li>
+          <li>50MB de espacio en disco duro</li>
+        </ul>
+        <h2 class="borderbottom icoosx">Mac</h2>
+        <ul>
+          <li>Sistemas operativos: Mac OS X 10.6 (Snow Leopard) y posterior</li>
+          <li>256MB de RAM</li>
+          <li>100MB de espacio en disco duro</li>
+        </ul>
+        <h2 class="borderbottom icotux">Linux</h2>
+        <p>Instantbird necesita al menos las siguientes bibliotecas para ejecutarse en Linux:</p>
+        <ul>
+          <li>GTK+ 2.18 o superior</li>
+          <li>GLib 2.22 o superior</li>
+          <li>Pango 1.14 o superior</li>
+          <li>X.Org 1.0 o superior</li>
+          <li>libstdc++ 4.3 o superior</li>
+        </ul>
+        <p>Por favor, ten en cuenta que las distribuciones Linux pueden proporcionar paquetes con distintos requisitos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">El equipo de Instantbird</a>.</p>
+      <p class="small-text">Todos los nombres y marcas registradas de productos son propiedad de sus respectivos dueños.</p>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var ua = navigator.userAgent;
+  var os = ua.indexOf('Mac') != -1 ? 'mac' : ua.indexOf('Linux') != -1 ? 'linux' : null;
+  if (!os) return;
+  [{"tag": "a", "n": 9, "key": "href", "val": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.win32.installer.exe", "mac": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.mac.dmg"}, "linux": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.es-ES.linux-i686.tar.bz2"}}].forEach(function (e) {
+    if (e.text) {
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode())
+        if (walker.currentNode.nodeValue.trim() == e.text)
+          walker.currentNode.nodeValue = walker.currentNode.nodeValue.replace(e.text, e[os]);
+      return;
+    }
+    var el = document.getElementsByTagName(e.tag)[e.n];
+    if (!el || el.getAttribute(e.key) != e.val) return;
+    for (var a in e[os])
+      e[os][a] === null ? el.removeAttribute(a) : el.setAttribute(a, e[os][a]);
+  });
+})();
+</script>
+</body>
+</html>

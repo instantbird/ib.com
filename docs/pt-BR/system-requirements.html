@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - Requisitos do Sistema</title>
+  <link rel="stylesheet" type="text/css" href="../theme/home.css" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Home</span></a>
+        <span></span><a href="http://blog.instantbird.org/">Notícias</a><a href="https://addons.instantbird.org/">Extensões</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Wiki</a><a href="about.html">Sobre</a>
+
+      </div>
+
+
+      <div id="page">
+
+        <ul id="index-box">
+          <li><a href="features.html">Melhorias</a></li>
+          <li><a href="download-all.html">Sistemas e Idiomas</a></li>
+          <li><a href="release-notes.html">Nota de lançamento</a></li>
+          <li style="border-bottom-style: none;"><a href="http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.win32.installer.exe">Baixe Instantbird 1.5 Agora!</a></li>
+        </ul>
+
+        <h1>Requisitos do Sistema</h1>
+        <h2>Os seguintes requisitos são necessários para executar Instantbird.</h2>
+
+        <h2 class="borderbottom icowin clear-float">Windows</h2>
+        <ul>
+          <li>Sistemas Operacionais: Microsoft Windows XP SP 2, Windows Server 2003, Windows Vista, Windows 7, Windows 8</li>
+          <li>128Mb de RAM</li>
+          <li>50Mb de espaço no Disco Rígido</li>
+        </ul>
+        <h2 class="borderbottom icoosx">Mac</h2>
+        <ul>
+          <li>Sistemas Operacionais: Mac OS X 10.6 (Snow Leopard) ou superior</li>
+          <li>256Mb de RAM</li>
+          <li>100Mb de espaço no Disco Rígido</li>
+        </ul>
+        <h2 class="borderbottom icotux">Linux</h2>
+        <p>Instantbird precisa destas bibliotecas (libraries) para ser executado no Linux:</p>
+        <ul>
+          <li>GTK+ 2.18 ou superior</li>
+          <li>GLib 2.22 ou superior</li>
+          <li>Pango 1.14 ou superior</li>
+          <li>X.Org 1.0 ou superior</li>
+          <li>libstdc++ 4.3 ou superior</li>
+        </ul>
+        <p>Algumas distribuições Linux podem prover pacotes que possuam requisitos diferentes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">The Instantbird Team</a>.</p>
+      <p class="small-text">Todos os nomes de produtos e marcas pertencem aos seus proprietários.</p>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var ua = navigator.userAgent;
+  var os = ua.indexOf('Mac') != -1 ? 'mac' : ua.indexOf('Linux') != -1 ? 'linux' : null;
+  if (!os) return;
+  [{"tag": "a", "n": 9, "key": "href", "val": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.win32.installer.exe", "mac": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.mac.dmg"}, "linux": {"href": "http://ftp.instantbird.com/instantbird/releases/1.5/instantbird-1.5.pt-BR.linux-i686.tar.bz2"}}].forEach(function (e) {
+    if (e.text) {
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode())
+        if (walker.currentNode.nodeValue.trim() == e.text)
+          walker.currentNode.nodeValue = walker.currentNode.nodeValue.replace(e.text, e[os]);
+      return;
+    }
+    var el = document.getElementsByTagName(e.tag)[e.n];
+    if (!el || el.getAttribute(e.key) != e.val) return;
+    for (var a in e[os])
+      e[os][a] === null ? el.removeAttribute(a) : el.setAttribute(a, e[os][a]);
+  });
+})();
+</script>
+</body>
+</html>

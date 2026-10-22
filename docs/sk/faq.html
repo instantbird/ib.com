@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Instantbird - Často kladené otázky</title>
+  <link rel="stylesheet" type="text/css" href="../theme/home.css" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
+</head>
+
+<body>
+
+  <div id="shadow">
+    <div id="main">
+      <div id="navigation">
+        <a href="." id="logo-top"><span>Domov</span></a>
+        <span></span><a href="http://blog.instantbird.org/">Novinky</a><a href="https://addons.instantbird.org/">Doplnky</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Vývojári</a><a href="about.html">O aplikácii</a>
+
+      </div>
+
+
+      <div id="page" class="faq condensed">
+
+        <h1>Často kladené otázky</h1>
+
+        <h2 class="borderbottom">Súhrn</h2>
+
+        <li>Inštalácia<ul>
+          <li><a href="#useexistingaccounts">Bude potrebné poskytnúť mojim priateľom nové kontaktné informácie?</a></li>
+          <li><a href="#systreq">Bude Instantbird fungovať na mojom počítači?</a></li>
+          <li><a href="#getlatest">Čo si mám stiahnuť, aby som získal najnovšiu verziu Instantbirdu?</a></li>
+          <li><a href="#installasuser">Môžem Instantbird nainštalovať na počítač bez toho aby som mal administrátorské práva?</a></li>
+          <li><a href="#sideinstall">Môžem nainštalovať Instantbird a pritom si na počítači nechať pôvodného IM klienta?</a></li>
+          <li><a href="#installwindows">Ako nainštalujem Instantbird na Windows?</a></li>
+          <li><a href="#installmac">Ako nainštalujem Instantbird na Mac OS X?</a></li>
+          <li><a href="#installlinux">Ako nainštalujem Instantbird na Linux?</a></li>
+          <li><a href="#portable">Je Instantbird prenosný (spustiteľný z USB flash disku)?</a></li>
+        </ul></li>
+
+        <li>Aktualizácia<ul>
+          <li><a href="#autoupdate">Musím niečo robiť, aby som vždy používal poslednú verziu Instantbirdu?</a></li>
+          <li><a href="#forceupdate">Čo keď budem chtět aktualizovať teraz?</a></li>
+          <li><a href="#overwrite">Môžem nainštalovať novšiu verziu cez už existujúce?</a></li>
+          <li><a href="#addonsafterupdate">Budú moje doplnky stále fungovať aj po aktualizácii?</a></li>
+        </ul></li>
+
+        <li>Odinštalovanie<ul>
+          <li><a href="#remove">Ako môžem Instantbird odstrániť?</a></li>
+        </ul></li>
+
+        <li>Používanie<ul>
+          <li><a href="#severalaccounts">Môžem používať niekoľko účtov naraz?</a></li>
+          <li><a href="#supportedprotocols">Aké protokoly sú podporované?</a></li>
+          <li><a href="#facebookusername">Keď sa pokúsim pripojiť k Facebook účtu, vráti sa mi chybové hlásenie <code>Neplatné/Invalid XMPP ID</code>. Čo je to za problém?</a></li>
+          <li><a href="#facebookauthorization">Keď sa pokúsim pripojiť k Facebook účtu, vráti sa mi chybové hlásenie <code>Not Authorized</code>. Čo je to za problém?</a></li>
+          <li><a href="#getaddons">Kde môžem získať doplnky (rozšírenie a vzhľady)?</a></li>
+          <li><a href="#logsenabled">Ukladá Instantbird záznamy mojich konverzácií a chatu?</a></li>
+          <li><a href="#logfolder">Kde sú záznamy uložené?</a></li>
+          <li><a href="#profilefolder">Kde je má zložka s profilom?</a></li>
+          <li><a href="#aboutconfig">Môžem použiť stránku about:config pre vyladenie niektorých predvolieb?</a></li>
+        </ul></li>
+
+        <li>Vývoj<ul>
+          <li><a href="#why">Prečo ste Instantbird urobili?</a></li>
+          <li><a href="#license">Ako je Instantbird licencovaný?</a></li>
+          <li><a href="#getthesource">Kde je zdrojový kód?</a></li>
+          <li><a href="#team">Kto robí Instantbird?</a></li>
+          <li><a href="#mozilla">Sponzoruje tento projekt Mozilla?</a></li>
+          <li><a href="#getinvolved">Ako sa môžem zapojiť?</a></li>
+          <li><a href="#translate">Môžem pomôcť s prekladom do svojho jazyka?</a></li>
+          <li><a href="#createaddons">Ako môžem vytvárať doplnky?</a></li>
+          <li><a href="#fxaddons">Môžu doplnky z Firefoxu/Thunderbirdu fungovať pre Instantbird?</a></li>
+          <li><a href="#follow">Ako môžem sledovať postup aktuálneho vývoja?</a></li>
+          <li><a href="#whatsnext">Čo sa chystá na ďalšiu verziu?</a></li>
+          <li><a href="#when">Kedy bude vydaná ďalšia hlavná verzia?</a></li>
+          <li><a href="#futurefeatures">Bude Instantbird podporovat přenos souborů/video chat/<em>jinou moji oblíbenou funkci</em>?</a></li>
+        </ul></li>
+
+        <h2 class="borderbottom">Inštalácia</h2>
+        <h3 class="first-title"><a class="no-link" name="useexistingaccounts">Bude potrebné poskytnúť mojim priateľom nové kontaktné informácie?</a></h3>
+        <p>Nie, s Instantbirdom môžete využiť všetky svoje existujúce instant messaging účty v jedinej aplikácii. Ak už instant messaging používate, nie je potrebné vytvárať nový účet pre používanie Instantbirdu.</p>
+
+        <h3><a class="no-link" name="systreq">Bude Instantbird fungovať na mojom počítači?</a></h3>
+        <p>Instantbird v súčasnosti podporuje Windows XP SP2 alebo novší, Mac OS X 10.5 alebo novší a Linux. Pre viac informácií si prečítajte <a href="system-requirements.html">systémové požiadavky</a>.</p>
+
+        <h3><a class="no-link" name="getlatest">Čo si mám stiahnuť, aby som získal najnovšiu verziu Instantbirdu?</a></h3>
+        <p>Tlačidlo na stiahnutie na <a href="/">domovskej stránke</a> automaticky vyberie verziu, ktorá zodpovedá vášmu systému. Ak si sami chcete vybrať váš operačný systém a jazyk, prejdite na <a href="download-all.html">stránku na stiahnutie</a>.</p>
+
+        <h3><a class="no-link" name="installasuser">Môžem Instantbird nainštalovať na počítač bez toho aby som mal administrátorské práva?</a></h3>
+        <p>Samozrejme!</p>
+
+        <h3><a class="no-link" name="sideinstall">Môžem nainštalovať Instantbird a pritom si na počítači nechať pôvodného IM klienta?</a></h3>
+        <p>Iste! Instantbird a ďalší klienti môžu byť nainštalovaní na jednom počítači bez toho, aby boli spôsobené nejaké problémy.</p>
+
+        <h3><a class="no-link" name="installwindows">Ako nainštalujem Instantbird na Windows?</a></h3>
+        <p>Instantbird je pre Windows zabalený ako spustiteľný inštalátor. Stačí spustiť súbor, ktorý ste si stiahli, a nechať sa viesť sprievodcom inštalácie.</p>
+
+        <h3><a class="no-link" name="installmac">Ako nainštalujem Instantbird na Mac OS X?</a></h3>
+        <p>Dvakrát kliknite na obraz disku Instantbirdu (súbor s koncovkou ".dmg"), ktorý ste si stiahli. Potom pretiahnite ikonu Instantbirdu do priečinka Aplikácií.</p>
+
+        <h3><a class="no-link" name="installlinux">Ako nainštalujem Instantbird na Linux?</a></h3>
+        <p>Extrahujte obsah stiahnutého archívu a spustite súbor nazvaný "instantbird". Ak sa vás vyskakovacie dialóg spýta, či chcete súbor upraviť alebo spustiť, vyberte "spustiť".</p><p>Aktuálne poskytujeme iba 32-bitové zostavenie. Pre jeho spustenie na 64-bitovom systéme bude potrebné stiahnuť knižnice zaisťujúce 32-bitovú kompatibilitu pre vašu distribúciu. Napríklad pre Ubuntu nainštalujte balík <code>ia32-libs</code> spustením <code>sudo apt-get install ia32-libs</code> z príkazového riadku.</p>
+
+        <h3><a class="no-link" name="portable">Je Instantbird prenosný (spustiteľný z USB flash disku)?</a></h3>
+        <p>Ak spustíte Instantbird z USB disku, v predvolenom nastavení sa bude váš používateľský profil ukladať na pevný disk v počítači.</p><p>Môžete Instantbirdu povedať, aby ukladal váš používateľský profil na USB disk, použitím argumentu <code>-profile</code> v príkazovom riadku.</p><p>Kliknite pravým tlačidlom na súbor <code>instantbird.exe</code> a zvoľte "Vytvořit zástupce", potom vo vlastnostiach zástupcu upravte cieľ a na koniec cesty pridajte argument <code> -profile ./<em>názovzložkysprofilom</em></code>.</p></p>
+
+
+        <h2 class="borderbottom">Aktualizácia</h2>
+        <h3 class="first-title"><a class="no-link" name="autoupdate">Musím niečo robiť, aby som vždy používal poslednú verziu Instantbirdu?</a></h3>
+        <p>Nie, v predvolenom nastavení Instantbird pravidelne kontroluje dostupnosť aktualizácií a požiada vás o súhlas, ak nájde novú verziu.</p><p>Ak vám toto správanie nevyhovuje, môžete ho upraviť v okne možností.</p>
+
+        <h3><a class="no-link" name="forceupdate">Čo keď budem chtět aktualizovať teraz?</a></h3>
+        <p>V hlavnej ponuke je položka <em>Skontrolovať aktualizácie</em> (dostupná v menu <em>Nápoveda</em>), takže nemusíte čakať na ponúknutie aktualizácie, ak viete, že aktualizácia je už dostupná.</p>
+
+        <h3><a class="no-link" name="overwrite">Môžem nainštalovať novšiu verziu cez už existujúce?</a></h3>
+        <p>Áno.</p>
+
+        <h3><a class="no-link" name="addonsafterupdate">Budú moje doplnky stále fungovať aj po aktualizácii?</a></h3>
+        <p>Kompatibilné doplnky fungovať budú. Ak doplnok nie je kompatibilný s aktualizovanou verziou Instantbirdu, Instantbird skontroluje, či nie je dostupná novšia verzia doplnku a aktualizuje ho.</p><p>Ak doplnok po aktualizácii nebude naďalej fungovať, môžete kontaktovať jeho autora a zistiť tak, či na novej verzii pracuje.</p>
+
+
+        <h2 class="borderbottom">Odinštalovanie</h2>
+        <h3 class="first-title"><a class="no-link" name="remove">Ako môžem Instantbird odstrániť?</a></h3>
+        <p>Ak ste pri inštalácii vo Windows použili inštalátor, môžete Instantbird odinštalovať z Ovládacích panelov ako každú inú apliakci.</p><p>V ostatných prípadoch len odstráňte priečinok Instantbird.</p>
+   <p>Odstránením Instantbirdu sa neodstráni vaše účty, záznamy konverzácií, rozšírenie alebo ďalšie doplnky. Tieto dáta sú uložené vo vašej <a href="#profilefolder">zložke s profilom</a>.</p><p>Akákoľvek verzia Instantbirdu, ktorú opäť nainštalujete po jeho odstránení, bude ďalej používať dáta z tohto priečinka profilu.</p>
+
+
+        <h2 class="borderbottom">Používanie</h2>
+        <h3 class="first-title"><a class="no-link" name="severalaccounts">Môžem používať niekoľko účtov naraz?</a></h3>
+        <p>Áno, môžete byť pripojení k niekoľkým účtom od akéhokoľvek podporovaného protokolu v rovnakú chvíľu.</p><p>Pre pridanie ďalšieho účtu použite <em>Správca účtov</em> (dostupný v menu <em>Nástroje</em>).</p>
+
+        <h3><a class="no-link" name="supportedprotocols">Aké protokoly sú podporované?</a></h3>
+        <p>Aktuálne Instantbird v základe podporuje: AIM, Bonjour, Facebook Chat, Gadu-Gadu, Google Talk, Groupwise, ICQ, IRC, MSN, MySpaceIM, Netsoul, Odnoklassniki, QQ, Simple, Twitter, VKontakte, XMPP, Yahoo a Yahoo JAPAN.</p><p>Pluginy pre pridanie ďalšieho protokolu môžu byť nainštalované ako <a href="#getaddons">doplnky</a>.</p>
+
+        <h3><a class="no-link" name="facebookusername">Keď sa pokúsim pripojiť k Facebook účtu, vráti sa mi chybové hlásenie <code>Neplatné/Invalid XMPP ID</code>. Čo je to za problém?</a></h3>
+        <p>Ako svoje užívateľské meno ste vložili e-mailovú adresu, ktorú používate na prihlásenie na stránky Facebooku. Facebook chat ale využíva svoje vlastné užívateľské meno. Pozrite sa na <a href="http://www.facebook.com/username/">http://www.facebook.com/username/</a> a skontrolujte ho.</p>
+
+        <h3><a class="no-link" name="facebookauthorization">Keď sa pokúsim pripojiť k Facebook účtu, vráti sa mi chybové hlásenie <code>Not Authorized</code>. Čo je to za problém?</a></h3>
+        <p>Musíte povoliť XMPP pripojenie k vášmu Facebook účtu.<br><ol><li>Pre povolenie XMPP pripojenie navštívte <a href="http://www.facebook.com/sitetour/chat.php">Facebook Chat</a> po prihlásení k vášmu Facebook účtu.</li><li>Odhláste sa zo stránok Facebooku.</li><li>Prihláste sa späť na Facebook.</li><li>Pripojenie vášho Facebook účtu v Instantbirdu ("Nástroje" > "Účty" a kliknite na tlačidlo "Pripojiť") by teraz malo prebehnúť úspešne.</li></ol></p>
+
+        <h3><a class="no-link" name="getaddons">Kde môžem získať doplnky (rozšírenie a vzhľady)?</a></h3>
+        <p>Môžete sa pozrieť do panelu <em>Získanie doplnkov</em> v Správcovi doplnkov (dostupný v menu <em>Nástroje</em>), kde uvidíte niektoré odporúčané doplnky. Pre viac doplnkov sa pozrite na <a href="https://addons.instantbird.org/">stránku doplnkov pre Instantbird</a>, kde môžete prechádzať aj experimentálne doplnky a recenzie.</p>
+
+        <h3><a class="no-link" name="logsenabled">Ukladá Instantbird záznamy mojich konverzácií a chatu?</a></h3>
+        <p>Áno, Instantbird v predvolenom nastavení záznamy vytvára. Ich nastavenie si môžete prispôsobiť v paneli <em>Súkromie/em> v okne <em>Možnosti</em>. Ak by ste sa radi pozreli na súbory samotné, kliknite v spomínanom paneli na tlačidlo <em>Otvoriť priečinok záznamov...</em>.</p>
+
+        <h3><a class="no-link" name="logfolder">Kde sú záznamy uložené?</a></h3>
+        <p>Názov a umiestnenie súborov záznamov sú nasledovné: <code><em><a href="#profilefolder">umiestnenie profilu</a></em>/logs/<em>protokol</em>/<em>vaše meno</em>/<em>dátum a čas</em>.txt</code> (kurzívou písané časti umiestnenia sú nahradené zodpovedajúcimi hodnotami).</p>
+
+        <h3><a class="no-link" name="profilefolder">Kde je má zložka s profilom?</a></h3>
+        <p>Nachádza sa v jednom z nasledujúcich umiestnení podľa vášho operačného systému:
+<table>
+<tr><td>Windows</td><td><code>%appdata%\Instantbird\Profiles\</code> (skopírujte a vložte presne toto do riadku Adresa v prieskumníkovi Windows)</td></tr>
+<tr><td>Mac OS X</td><td><code>~/Library/Application Support/Instantbird/Profiles/</code></td></tr>
+<tr><td>Linux (Unix)</td><td><code>~/.instantbird/</code></td></tr>
+</table>
+<p>Akákoľvek verzia Instantbirdu, ktorú opäť nainštalujete po jeho odstránení, bude ďalej používať dáta z tejto zložky profilu.</p></p>
+
+        <h3><a class="no-link" name="aboutconfig">Môžem použiť stránku about:config pre vyladenie niektorých predvolieb?</a></h3>
+        <p>Hoci ju neodporúčame používať, stránka about:config je dostupná z panela <em>Rozšírené</em> v okne možností.</p>
+
+
+        <h2 class="borderbottom">Vývoj</h2>
+        <h3 class="first-title"><a class="no-link" name="why">Prečo ste Instantbird urobili?</a></h3>
+        <p>Prinášame vám Instantbird, pretože <a href="http://www.instantbird.org/">veríme, že instant messaging je dôležitou súčasťou vášho online života</a>.</p>
+
+        <h3><a class="no-link" name="license">Ako je Instantbird licencovaný?</a></h3>
+        <p>Instantbird je licencovaný GNU GPL licenciou verzia 2.0 alebo neskorší (pretože používa libpurple, ktorá je licencovaná GPL). Avšak väčšina zdrojového kódu je licencovaná tiež Mozilla Public License 2.0 (MPL).</p>
+
+        <h3><a class="no-link" name="getthesource">Kde je zdrojový kód?</a></h3>
+        <p>Zdrojový kód každej vydanej verzie je dostupný <a href="download-all.html">stránku na stiahnutie</a>. Posledný vývojový kód môže byť získaný z Mercurial repozitára podľa nasledujúcich <a href="https://wiki.instantbird.org/Instantbird:Compiling">inštrukcií pre zostavenie</a>.</p>
+
+        <h3><a class="no-link" name="team">Kto robí Instantbird?</a></h3>
+        <p>Sme <a href="about.html">malý tím</a> vysoko motivovaných ľudí, ale veríme, že mnoho ľudí, vrátane vás, sa k nám ešte pripojí a pomôžu tento projekt vylepšiť.</p>
+
+        <h3><a class="no-link" name="mozilla">Sponzoruje tento projekt Mozilla?</a></h3>
+        <p>Nadácia Mozilla nám nepomáha finančne.</p><p>Logo "Powered by Mozilla" znamená, že Instantbird vychádza z kódu a technológií, ktoré sú vyvinuté komunitou Mozilla. Mozilla komunite sme veľmi vďační za túto úžasnú technológiu, na ktorej je Instantbird založený.</p>
+
+        <h3><a class="no-link" name="getinvolved">Ako sa môžem zapojiť?</a></h3>
+        <p>Je veľa možností, ako sa stať súčasťou projektu. Nepotrebujete byť počítačovým programátorom, aby ste nám pomohli. Podrobnosti nájdete na stránke <a href="http://www.instantbird.org/#getinvolved">ako sa zapojiť</a>.</p>
+
+        <h3><a class="no-link" name="translate">Môžem pomôcť s prekladom do svojho jazyka?</a></h3>
+        <p>Áno! Pre viac detailov si prečítajte <a href="http://wiki.instantbird.org/Instantbird:Translation">túto wiki stránku o preklade</a>.</p>
+
+        <h3><a class="no-link" name="createaddons">Ako môžem vytvárať doplnky?</a></h3>
+        <p>Prečítajte si <a href="http://wiki.instantbird.org/Instantbird:Extension">wiki stránku o rozšíreniach</a>.</p>
+
+        <h3><a class="no-link" name="fxaddons">Môžu doplnky z Firefoxu/Thunderbirdu fungovať pre Instantbird?</a></h3>
+        <p>'Sami od seba' nie, ale väčšina z nich môže byť prispôsobená. prečítajte si <a href="http://wiki.instantbird.org/Instantbird:Porting_Firefox_Extensions">stránku o úprave doplnkov Firefoxu</a>.</p>
+
+        <h3><a class="no-link" name="follow">Ako môžem sledovať postup aktuálneho vývoja?</a></h3>
+        <p>Ak chcete byť informovaní o dôležitých novinkách, sledujte <a href="http://blog.instantbird.org/">náš blog</a>.</p><p>Ak chcete sledovať naše diskusie, radi vás uvítame v našej IRC miestnosti: <a href="irc://irc.mozilla.org/#instantbird">#instantbird na serveri irc.mozilla.org</a>.</p><p>Denne sú zostavované <a href="http://ftp.instantbird.com/instantbird/nightly/latest-trunk/">nočná zostavenia</a>, takže nám môžete pomôcť vyskúšať funkcie, ktoré boli práve pridané. Nebojte sa ich použiť, ale pozor! Táto zostavenie nemusí byť stabilný. Sú určené k tomu, aby ste nám pomohli testovať pripravované funcke, nie aby ste si hrali na dieťa, ktoré chce dostať novú hračku ako prvý. Ak nájdete chyby, <a href="http://bugzilla.instantbird.org/">nahláste nám je</a> prosím (<a href="https://wiki.instantbird.org/Instantbird:Bugzilla">Vloženie bugu</a>: čo má hlásenie o bugu obsahovať) namiesto sťažovania.</p>
+
+        <h3><a class="no-link" name="whatsnext">Čo sa chystá na ďalšiu verziu?</a></h3>
+        <p>Prečítajte si <a href="http://wiki.instantbird.org/Instantbird:Roadmap">plán (roadmap)</a>.</p>
+
+        <h3><a class="no-link" name="when">Kedy bude vydaná ďalšia hlavná verzia?</a></h3>
+        <p>Sme veľmi potešení, že zdieľate naše nadšenie pre posun vpred čo možno najrýchlejšie. Avšak je tiež potrebný prirodzený vývoj softvéru. Môže byť problematické určiť konečné termíny a my považujeme udržanie kvality za dôležitejšie.</p>
+
+        <h3><a class="no-link" name="futurefeatures">Bude Instantbird podporovat přenos souborů/video chat/<em>jinou moji oblíbenou funkci</em>?</a></h3>
+        <p>Prečítajte si <a href="http://wiki.instantbird.org/Instantbird:Roadmap">plán (roadmap)</a>.</p><p>Neváhajte s nami diskutovať o veciach, ktoré tu nie sú uvedené, a zistiť, či nás zaujmú alebo môžu byť implementované formou doplnkov.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-shadow">
+    <div id="footer">
+      <p>&copy; 2007-2013 - <a href="about.html">Instantbird Team</a>.</p>
+      <p class="small-text">Všetky názvy produktov a obchodné značky sú majetkom ich príslušných vlastníkov.</p>
+    </div>
+  </div>
+
+</body>
+</html>

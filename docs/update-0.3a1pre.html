@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>update to 0.3a1pre</title>
+<script>
+(function () {
+  var available = ["cs","de","en-US","es-ES","et","fr","he","hu","it","nl","pl","pt-BR","pt-PT","ru","sk","sv-SE","tr","uk","zh-TW","ct"], page = location.pathname.split('/').pop();
+  var byLower = {};
+  available.forEach(function (l) { byLower[l.toLowerCase()] = l; var s = l.split('-')[0].toLowerCase(); if (!byLower[s]) byLower[s] = l; });
+  var langs = navigator.languages || [navigator.language || ''], fallback = null;
+  for (var i = 0; i < langs.length; i++) {
+    var l = langs[i].toLowerCase(), s = l.split('-')[0];
+    if (byLower[l]) { fallback = byLower[l]; break; }
+    if (!fallback && byLower[s]) fallback = byLower[s];
+  }
+  if (fallback && fallback != 'en-US') location.replace(fallback + '/' + page + location.hash);
+})();
+</script>
+</head>
+<body>
+<p>Nightly builds now have a version number of 0.3a1pre!</p>
+</body>
+</html>
